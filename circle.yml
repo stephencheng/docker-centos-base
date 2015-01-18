@@ -5,8 +5,8 @@ machine:
     - docker
 dependencies:
   pre:
-    - curl -Lo packer_0.7.0_linux_amd64.zip https://dl.bintray.com/mitchellh/packer/packer_0.7.0_linux_amd64.zip
-    - unzip packer_0.7.0_linux_amd64.zip
+    - curl -Lo 0.6.1_linux_amd64.zip https://bintray.com/artifact/download/mitchellh/packer/0.6.1_linux_amd64.zip
+    - unzip 0.6.1_linux_amd64.zip
   override:
     - docker info
     - ./packer build centos-base.json
