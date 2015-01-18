@@ -3,7 +3,7 @@ machine:
     Australia/Sydney
 dependencies:
   pre:
-    - docker version
+    - sudo docker version
 test:
   override:
     - echo packer
