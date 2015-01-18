@@ -1,0 +1,57 @@
+---
+# This role assumes EPEL is already installed
+- name: install common packages 
+  yum: name={{ item }} state=present
+  with_items:
+    - passwd
+    - openssh-server
+    - psmisc
+    - net-tools
+    - iotop
+    - bind-utils
+    - nc
+    - wget
+    - curl
+    - tar
+    - bzip2
+    - zip
+    - unzip
+    - wget
+    - elinks
+    - links
+    - lynx
+    - lsof
+    - bash-completion
+    - dos2unix
+    - screen
+    - tmux
+    - byobu
+    - htop
+    - dstat
+    - lftp
+    - p7zip
+    - telnet
+    - sysstat
+    - perl
+    - gcc
+    - git
+    - vlock
+    - whois
+    - mc
+    - mosh
+    - nano
+    - pwgen
+    - libselinux-python
+    - libsemanage-python
+    - mercurial
+    - subversion
+    - nodejs
+    - npm
+    - fontconfig
+    - freetype
+    - libfreetype.so.6
+    - libfontconfig.so.1
+    - libstdc++.so.6
+
+- name: generate SSH keys
+  command: /usr/bin/ssh-keygen -A

@@ -1,0 +1,7 @@
+---
+# Oracle JDK 1.8.0 for CentOS 7
+- name: download JDK package
+  get_url: url=https://s3.amazonaws.com/eneset/RPMS/7/x86_64/jdk-{{ java8_version }}-linux-x64.rpm dest=/root/jdk-{{ java8_version }}-linux-x64.rpm sha256sum={{ java8_sha256sum }}
+
+- name: install JDK rpm
+  yum: name=/root/jdk-{{ java8_version }}-linux-x64.rpm state=present
