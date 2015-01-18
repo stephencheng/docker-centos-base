@@ -64,5 +64,4 @@ sleep 5
 # use docker with packer 
 #packer build centos-base.json
 
-# Don't get excited, it's fake
-echo $DOCKER_PASSWORD
+echo $DOCKER_USER

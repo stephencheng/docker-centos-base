@@ -1,8 +1,6 @@
 language: ruby
 env:
-  - secure: "BRVjh/qXyVMCBjFZD9OuSL7+rEsFTsD3et5ZvRG094EynF3lXLIglwmT7zLFyDmn/4Jg+PIp2ZSUKB6VyzQ/u9yywg83HYIxqCDAsnL6irKcfhSmufijsWJQO3sbvB1S6ELVv3y/c+BTBGyZ2Xsp1QkzC1P5T2wm4g77TKmoR7A="
-  - secure: "A7Q+H2Xs/E1kn1VKfHexhd/7FQsU56gwLNN1/k51dXe5QhCSGUgO5whGnvj4Lq8Ti6wVQmSFA7w1a13U6k9H7oVfNREjG/JC6dWbQLIhiiaz3J3mgu+UhZzsnfd28VRVugWJw3kpstyh5tW8n+z6AI7/hrY7QK+f1EDRgLHm3mY="
-  - secure: "BZAR6sV0EuOQo4MYQKRUo3zqL+oxvJHyM9hjekwzPVIzN5HxTeyGqjmeLsOLtKrRcGYjAe8BSHRM+jQ0adpB60YLRuGg63kGcaF0Dp3L0Uk1uuxrFuWnvabe8b7Ca2fyrfjAxlDGnPj+No5MY/H8Ptyf0xtyEk8caQF5GSKthXI="
+  - secure: "fK3v/4RfJa4xsT1ysaAMhhBBhxBmqlvtLAv/zwIgAKYfoAZdd9OYXeBoAtFFLNUIDbOQCA5grPep/yaiczZ3t4ypKmwyFYbeDkEXSeFfwgNST5ErO2+dz23iZC+5vvGDj3WWVUJ/qHFBiNbs/e30ycx7QbcvB4dEW5lSg05bj1o="
 before_install:
   - uname -a
   - cat /etc/lsb-release
