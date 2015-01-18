@@ -2,15 +2,11 @@
     "builders": [
         {
             "type": "docker",
-            "image": "centos:centos7",
+            "image": "eneset/centos7",
             "commit": true
         }
     ],
     "provisioners": [
-        {
-            "type": "shell",
-            "script": "scripts/ansible.sh"
-        },
         {
             "type": "ansible-local",
             "playbook_file": "playbooks/centos-base.yml",

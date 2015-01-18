@@ -52,6 +52,7 @@
     - libfreetype.so.6
     - libfontconfig.so.1
     - libstdc++.so.6
+    - tcpdump
 
 - name: generate SSH keys
   command: /usr/bin/ssh-keygen -A
