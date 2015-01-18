@@ -12,14 +12,5 @@
             "playbook_file": "playbooks/centos-base.yml",
             "playbook_dir": "playbooks"
         }
-    ],
-    "post-processors": [
-        [
-            {
-                "type": "docker-tag",
-                "repository": "eneset/centos-base",
-                "tag": "latest"
-            }
-        ]
     ]
 }
