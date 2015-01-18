@@ -1,5 +1,7 @@
 language: ruby
 env:
+  - secure: "BRVjh/qXyVMCBjFZD9OuSL7+rEsFTsD3et5ZvRG094EynF3lXLIglwmT7zLFyDmn/4Jg+PIp2ZSUKB6VyzQ/u9yywg83HYIxqCDAsnL6irKcfhSmufijsWJQO3sbvB1S6ELVv3y/c+BTBGyZ2Xsp1QkzC1P5T2wm4g77TKmoR7A="
+  - secure: "A7Q+H2Xs/E1kn1VKfHexhd/7FQsU56gwLNN1/k51dXe5QhCSGUgO5whGnvj4Lq8Ti6wVQmSFA7w1a13U6k9H7oVfNREjG/JC6dWbQLIhiiaz3J3mgu+UhZzsnfd28VRVugWJw3kpstyh5tW8n+z6AI7/hrY7QK+f1EDRgLHm3mY="
   - secure: "BZAR6sV0EuOQo4MYQKRUo3zqL+oxvJHyM9hjekwzPVIzN5HxTeyGqjmeLsOLtKrRcGYjAe8BSHRM+jQ0adpB60YLRuGg63kGcaF0Dp3L0Uk1uuxrFuWnvabe8b7Ca2fyrfjAxlDGnPj+No5MY/H8Ptyf0xtyEk8caQF5GSKthXI="
 before_install:
   - uname -a
@@ -19,4 +21,4 @@ install:
   - curl -sLo linux https://github.com/jpetazzo/sekexe/raw/master/uml
   - chmod +x linux
 script:
-  - ./linux quiet mem=2G rootfstype=hostfs rw eth0=slirp,,/usr/bin/slirp-fullbolt init=$(pwd)/uml.sh WORKDIR=$(pwd) HOME=$HOME
+  - ./linux quiet mem=2G rootfstype=hostfs rw eth0=slirp,,/usr/bin/slirp-fullbolt init=$(pwd)/uml.sh WORKDIR=$(pwd) HOME=$HOME DOCKER_EMAIL=$DOCKER_EMAIL DOCKER_PASSWORD=$DOCKER_PASSWORD DOCKER_USER=$DOCKER_USER
