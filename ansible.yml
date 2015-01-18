@@ -3,5 +3,4 @@
   connection: local
   roles:
   - centos-base
-  - centos-java8
-  - centos-ruby
+  - centos-zile
